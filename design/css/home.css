@@ -1,0 +1,56 @@
+body { background: url(../img/bg.jpg) !important; font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  color:#3f4652; overflow-x: hidden;
+}
+/*----------------------Navigation-------------------*/
+.navbar-fixed-top { background: rgba(255, 255, 255, 0.7); border:none;}
+.navbar-default ul.nav li a {font-size: 11pt; letter-spacing: 1px; text-transform: none; /*font-family: 'Roboto', sans-serif;*/
+    color: /*rgba(255,255,255,.8)*/#FFFFFF; background: transparent; height: 38px; font-weight: 400;
+}.navbar-default .navbar-nav>li>a{color: #FFFFFF !important;}
+.navbar-default ul.nav li a:hover{color: #FFFFFF;}
+/*-------------------------------------------------*/
+
+p{ font-size: 14px; font-weight: 400; margin-top: 0; color: #3f4652; font-family: "segoe","Segoe UI",Arial,sans-serif;}
+
+#lotel{margin: auto; /*background: rgb(0,0,0,.40);*/
+}
+.welcome {position: relative; z-index: 10; margin: 10% auto;
+    width: 100%; height: auto; color: #FFFFFF;
+}
+.lotel_menu{width: auto; height: auto; padding: 20px; margin-left: 15%;
+  background: rgba(255, 255, 255, 0.7); /* background:rgba(14, 116, 187, 0.50);*/ border-radius: 10px;
+}.lotel_menu > h2{
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: #f78406;/*#3f4652;*/  font-size: 22px; font-weight: 400;
+    padding: 0 4px 10px; box-sizing: border-box;
+}
+.login_logo img {display: block; margin-left: auto;
+    margin-right: auto; margin-top: -15%; width: 100px;
+}
+
+.lotel_desc{margin: 8% auto 0 10%; /*background: red;*/ width: auto;}
+.lotel_desc p{ color: #000; font-weight: 600; font-size: 3.5em; 
+    font-family: "segoe","Segoe UI",Arial,sans-serif; border-bottom: 2px solid #f2f2f3;
+}
+p.lotel_desc {font-size: 16px; margin: 5% auto; font-weight: lighter; line-height: 25px;}
+p.lotel_desc span {color: #14bd1a; font-weight: 400; font-size: 10pt;}
+
+.form__input,.lotel_menu .form-control { border-radius: 0px; font-size: 14px; border: none;
+    margin: 0px; background: rgba(2 85 163 / 65%); padding: 9px; height: 40px;
+    color: #FFF; outline: none; transition: background-color .2s ease;
+    float: none; font-family: inherit; -webkit-appearance: textfield;
+}
+.form-control::-webkit-input-placeholder { color: #d9d9e2; }
+.form__input[type=text], .form__input[type=password]{ width: 205px;
+}
+.navbar-form .btn, .lotel_menu .btn{background: #f78406; border-radius: 0px; border:1px solid #f78406; height: 40px;}
+
+
+/* ===========================
+--- Footer
+============================ */
+.sub-footer {
+  background-color:rgba(255, 255, 255, 0.5);
+  padding: 10px 0 10px;
+}.sub-footer p{
+  color: #000; font-weight: 600;
+}

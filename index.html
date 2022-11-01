@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<title>Trams</title>
+	<meta name="description" content="Transport Management System">
+	<meta name="author" content="Sapphire Pillars">
+	<meta name="keyword" content="Trams">
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: CSS -->
+	<link rel="stylesheet" href="design/css/bootstrap.min.css">
+	<link href="design/css/home.css" rel="stylesheet">
+	<link href="design/css/media.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- end: CSS -->
+	
+		
+	<!-- start: Favicon-->
+	<link rel="shortcut icon" href="design/img/favicon.png">
+	<!-- end: Favicon -->
+
+</head>
+
+<body>
+	<section id="lotel">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container"> 
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <img class="img-responsive" src="design/img/logo.png">
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <!--<ul class="nav navbar-nav">
+			      	<li><a href="LoTel Web Application.pdf" target="_new">Document</a></li>
+			      	<li><a href="get_package.php">Explore</a></li>
+			      	<li class=""><a href="faq.php">FAQs</a></li>
+			      	<li><a href="lotel_quote.php">Quotation</a></li>
+			      </ul>-->
+			      
+			      <form class="navbar-form navbar-right" method="post" action="intermediary.php">
+			        <div class="form-group">
+			          <input type="text" class="form-control form__input" name="username" autocomplete="off" placeholder="Username" required="required">
+			        </div>
+			        <div class="form-group">
+			          <input type="password" class="form-control form__input" name="password" autocomplete="off" placeholder="Password" required="required">
+			        </div>
+					<button type="submit" class="btn btn-success" name="operation" value="Login">Sign In</button>
+			      </form>
+			    </div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container">					
+			<div class="row-fluid">
+				<div class="welcome">
+					<div class="col-sm-6">
+						<?php
+				        if (@$_GET['err'] ==1){
+				                echo '<p class="wrong">Wrong username and or password, please try again!!!!</p>';
+				            }
+				         ?>
+						<div class="lotel_desc">
+							<p>
+								Know your drivers.<br>
+								Your business.<br>
+								Manage vehicles.<br>
+								Track profits.
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="lotel_menu">
+							<h2 class="text-center"> Need Solution ? Sign up! </h2>
+							<p class="text-center">
+								Get the best experience in sophisticated and simplified transport & profits management:
+							</p> 
+							<form>
+								<div class="form-group">
+						          	<input type="text" class="form-control" name="name" autocomplete="off" placeholder="Enter full name" required="required">
+						        </div>
+						        <div class="form-group">
+						          	<input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Enter phone number" required="required">
+						        </div>
+						        <div class="form-group">
+						          	<input type="text" class="form-control" name="physical" autocomplete="off" placeholder="Enter physical address" required="required">
+						        </div>
+						        <div class="form-group">
+						          	<input type="text" class="form-control" name="email" autocomplete="off" placeholder="Enter email address" required="required">
+						        </div>
+						        <div class="form-group">
+						          	<input type="password" class="form-control" name="password" autocomplete="off" placeholder="Enter password" required="required">
+						        </div>
+						        <div class="form-group">
+						        	<button type="submit" class="btn btn-success" name="operation" value="Login">Sign Up</button>
+						        </div>
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			</div><!--/fluid-row-->
+		</div><!--/container-->
+	</section>
+
+	<div class="sub-footer navbar-fixed-bottom">
+        <div class="container">
+          <div class="row">
+          	<p class="text-center">&copy; Copyright 2022 - Sapphire Pillars. All rights reserved.</p>
+          </div>  
+        </div>
+      </div>
+	
+	
+	<!-- start: JavaScript-->
+    <script src="design/js/jquery.min.js"></script>
+    <script src="design/js/bootstrap.min.js"></script>
+	<!-- end: JavaScript-->
+	
+</body>
+</html>
