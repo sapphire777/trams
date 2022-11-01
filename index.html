@@ -51,7 +51,7 @@
 			      	<li><a href="lotel_quote.php">Quotation</a></li>
 			      </ul>-->
 			      
-			      <form class="navbar-form navbar-right" method="post" action="intermediary.php">
+			      <form class="navbar-form navbar-right" method="post" action="app/admin">
 			        <div class="form-group">
 			          <input type="text" class="form-control form__input" name="username" autocomplete="off" placeholder="Username" required="required">
 			        </div>
@@ -68,11 +68,6 @@
 			<div class="row-fluid">
 				<div class="welcome">
 					<div class="col-sm-6">
-						<?php
-				        if (@$_GET['err'] ==1){
-				                echo '<p class="wrong">Wrong username and or password, please try again!!!!</p>';
-				            }
-				         ?>
 						<div class="lotel_desc">
 							<p>
 								Know your drivers.<br>
